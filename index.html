@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rosa | Hairstylist Portfolio</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    background: #fafafa;
+    color: #222;
+}
+
+/* HERO */
+.hero {
+    height: 40vh;
+    background: linear-gradient(180deg, #000 0%, #111 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    border-bottom: 1px solid #222;
+}
+
+.hero h1 {
+    font-size: 3.2em;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.hero p {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #ddd;
+}
+
+/* GOLD LINE */
+.gold-line {
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(90deg, #caa133, #f5e6a8, #caa133);
+    margin: 15px auto;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+/* SECTION TITLES */
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+/* DIVIDER */
+.section-divider {
+    width: 50px;
+    height: 2px;
+    background: linear-gradient(90deg, #caa133, #f5e6a8, #caa133);
+    margin: 40px auto;
+}
+
+/* ABOUT */
+.about {
+    text-align: center;
+}
+
+.profile-pic {
+    width: 140px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* SKILLS */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.skill {
+    background: #111;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9em;
+}
+
+/* EXPERIENCE */
+.job {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* GALLERY */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);
+}
+
+/* CONTACT */
+.contact {
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+    <div>
+        <h1>Rosa</h1>
+        <div class="gold-line"></div>
+        <p>Licensed Hairstylist • Color Specialist • Bridal Styling</p>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<div class="container about">
+    <img src="profile.jpg" class="profile-pic">
+    <h2>Professional Summary</h2>
+    <p>
+        Passionate hairstylist with experience in modern color techniques,
+        precision cutting, and personalized client styling. Dedicated to
+        creating confidence through hair and delivering high-quality results.
+    </p>
+</div>
+
+<div class="section-divider"></div>
+
+<!-- SKILLS -->
+<div class="container">
+    <h2>Core Skills</h2>
+    <div class="skills">
+        <div class="skill">Balayage</div>
+        <div class="skill">Highlights</div>
+        <div class="skill">Precision Cuts</div>
+        <div class="skill">Blowouts</div>
+        <div class="skill">Bridal Styling</div>
+        <div class="skill">Color Correction</div>
+    </div>
+</div>
+
+<div class="section-divider"></div>
+
+<!-- EXPERIENCE -->
+<div class="container">
+    <h2>Experience</h2>
+
+    <div class="job">
+        <h3>Stylist Assistant – Salon Name</h3>
+        <p>2023 – Present</p>
+        <ul>
+            <li>Assisted with color applications and styling services</li>
+            <li>Maintained sanitation and client-ready stations</li>
+            <li>Supported consultations and client experience</li>
+        </ul>
+    </div>
+
+</div>
+
+<div class="section-divider"></div>
+
+<!-- PORTFOLIO -->
+<div class="container">
+    <h2>Portfolio</h2>
+    <div class="gallery">
+        <img src="hair1.jpg">
+        <img src="hair2.jpg">
+        <img src="hair3.jpg">
+        <img src="hair4.jpg">
+    </div>
+</div>
+
+<div class="section-divider"></div>
+
+<!-- CONTACT -->
+<div class="container contact">
+    <h2>Contact</h2>
+    <p>Email: youremail@example.com</p>
+    <p>Phone: (555) 555-5555</p>
+    <a href="#" class="button">View Instagram</a>
+</div>
+
+<footer>
+    © 2026 Rosa Hairstylist Portfolio
+</footer>
+
+</body>
+</html>
